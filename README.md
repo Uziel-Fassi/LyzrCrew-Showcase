@@ -1,19 +1,19 @@
 # LyzrCrew
 
-**AI-Powered B2B Lead Generation SaaS** — Automate corporate research and outreach with CrewAI agents, delivering personalized cold emails in minutes.
+**AI-Powered B2B Lead Generation SaaS** — Automate corporate research and outreach with CrewAI agents, delivering personalized cold emails at scale.
 
-LyzrCrew is a full-stack SaaS platform that leverages AI agents to research companies, analyze business opportunities, and generate highly personalized cold outreach emails. Built with FastAPI, HTMX, and powered by Google'"'"'s Gemini AI, it offers a seamless web experience with real-time tracking, credit-based billing, and secure OTP authentication.
+LyzrCrew is a full-stack SaaS platform that uses AI-driven research to automate company intelligence, identify sales opportunities, and craft outreach messages. Built with FastAPI, HTMX, and Google’s Gemini AI, it delivers a responsive web experience with real-time progress tracking, credit-based billing, and secure OTP authentication.
 
 ## 📋 Table of Contents
 
-- [Features](#-features)
-- [Prerequisites](#-prerequisites)
-- [Installation](#-installation)
-- [Quick Start](#-quick-start)
-- [Technologies](#-technologies)
-- [License](#-license)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+- [Technologies](#technologies)
+- [License](#license)
 
-## ✨ Features
+## Features
 
 - **🤖 AI Agent Crew**: Multi-agent system using CrewAI for comprehensive company research and personalized email generation
 - **📊 Real-Time Tracking**: Live progress updates for bulk research jobs with HTMX-powered dashboards
@@ -22,7 +22,7 @@ LyzrCrew is a full-stack SaaS platform that leverages AI agents to research comp
 - **📈 Bulk Processing**: Handle multiple companies simultaneously with CSV export capabilities
 - **🎨 Modern UI**: Glassmorphism design with Tailwind CSS and responsive HTMX interactions
 
-## 🛠 Prerequisites
+## Prerequisites
 
 - Python 3.11+
 - Node.js 18+ (for Tailwind CSS, optional for development)
@@ -32,7 +32,7 @@ LyzrCrew is a full-stack SaaS platform that leverages AI agents to research comp
   - Stripe (for payments)
   - Resend (for email delivery)
 
-## 🚀 Installation
+## Installation
 
 1. **Clone the repository:**
    \`\`\`bash
@@ -64,7 +64,7 @@ LyzrCrew is a full-stack SaaS platform that leverages AI agents to research comp
 
    Open [http://localhost:8000](http://localhost:8000) in your browser.
 
-## 📖 Quick Start
+## Quick Start
 
 ### Single Company Research
 
@@ -99,7 +99,7 @@ files = {"file": open("companies.csv", "rb")}
 response = requests.post("http://localhost:8000/api/htmx/bulk-research", files=files)
 \`\`\`
 
-## 🏗 Technologies
+## Technologies
 
 - **Backend**: FastAPI, SQLAlchemy, SQLite
 - **Frontend**: HTMX, Tailwind CSS, Jinja2 templates
