@@ -41,15 +41,18 @@ Unlike standard LLM wrappers, LyzrCrew utilizes a sophisticated multi-agent orch
 
 ###  The Platform in Action
 ![Frontend Request](/frontend-request.gif)
+
 *Initiating a company research and outreach job from the HTMX-powered dashboard.*
 
 ###  Under the Hood: CrewAI Agents
-![Terminal Execution](/terminal-agents.gif)
+![Terminal Execution](/terminal-agent.gif)
+
 *Real-time terminal output showing the 3-Agent Crew executing internet searches, analyzing data, and drafting copy.*
 
 ### Final Output
 <div align="center">
-![Final Outreach Output](/lyzrout.jpg)
+![Final Outreach Output](/lyzrout.JPG)
+   
 *The final generated lead package: Comprehensive company dossier and hyper-personalized cold email ready to send.*
 </div>
 
