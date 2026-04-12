@@ -22,6 +22,25 @@ LyzrCrew is a full-stack SaaS platform that uses AI-driven research to automate 
 - **📈 Bulk Processing**: Handle multiple companies simultaneously with CSV export capabilities
 - **🎨 Modern UI**: Glassmorphism design with Tailwind CSS and responsive HTMX interactions
 
+## 🧠 Autonomous AI Architecture (The 4-Agent Crew)
+
+Unlike standard LLM wrappers, LyzrCrew utilizes a sophisticated multi-agent orchestration framework (CrewAI) where four distinct AI personas work sequentially to generate high-converting outputs:
+
+1. ** The Lead Researcher:** - **Role:** Deep-dives into the target company using DuckDuckGo search and custom scraping tools. 
+   - **Task:** Gathers recent news, financial highlights, product updates, and key personnel data to build a comprehensive company profile.
+
+2. ** The Market Analyst:**
+   - **Role:** Processes the raw data gathered by the Researcher.
+   - **Task:** Identifies core business bottlenecks, pain points, and strategic opportunities, explicitly aligning them with the user's `pitch_goal` (e.g., matching a company's recent expansion with your logistics software pitch).
+
+3. ** The Direct Response Copywriter:**
+   - **Role:** The creative engine.
+   - **Task:** Takes the Analyst's strategy and drafts a hyper-personalized, psychology-driven cold email. It ensures the tone is B2B professional, avoids spam words, and crafts a compelling hook based on the recent news found in step 1.
+
+4. ** The QA / Conversion Reviewer:**
+   - **Role:** The final quality check.
+   - **Task:** Reviews the drafted email against strict cold-outreach constraints (e.g., under 150 words, clear Call-To-Action, no generic fluff). It refines the copy and outputs the final, send-ready lead package.
+
 ## Prerequisites
 
 - Python 3.11+
@@ -110,7 +129,7 @@ response = requests.post("http://localhost:8000/api/htmx/bulk-research", files=f
 
 ## 👨‍💻 Author & Contact
 
-**Uziel Fassi** *Computer Science Undergraduate & Full-Stack / AI Engineer*
+**Uziel Fassi** *AI Automation Engineer & Full-Stack Developer*
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/uziel-fassi-08840a287/) 
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20Site-black?style=for-the-badge&logo=framer&logoColor=white)](https://myportfoliouzielf.framer.website)
 [![GitHub](https://img.shields.io/badge/GitHub-View%20Profile-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Uziel-Fassi)
