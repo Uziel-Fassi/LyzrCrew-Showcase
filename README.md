@@ -22,24 +22,37 @@ LyzrCrew is a full-stack SaaS platform that uses AI-driven research to automate 
 - **📈 Bulk Processing**: Handle multiple companies simultaneously with CSV export capabilities
 - **🎨 Modern UI**: Glassmorphism design with Tailwind CSS and responsive HTMX interactions
 
-## 🧠 Autonomous AI Architecture (The 4-Agent Crew)
+## 🧠 Autonomous AI Architecture (The 3-Agent Crew)
 
-Unlike standard LLM wrappers, LyzrCrew utilizes a sophisticated multi-agent orchestration framework (CrewAI) where four distinct AI personas work sequentially to generate high-converting outputs:
+Unlike standard LLM wrappers, LyzrCrew utilizes a sophisticated multi-agent orchestration framework (CrewAI) where three distinct AI personas work sequentially to generate high-converting outputs:
 
-1. ** The Lead Researcher:** - **Role:** Deep-dives into the target company using DuckDuckGo search and custom scraping tools. 
+1. ** Senior Corporate Intelligence Researcher:** - **Role:** Deep-dives into the target company using real-time search tools (DuckDuckGo and custom scraping). 
    - **Task:** Gathers recent news, financial highlights, product updates, and key personnel data to build a comprehensive company profile.
 
-2. ** The Market Analyst:**
+2. ** B2B Business Analyst:**
    - **Role:** Processes the raw data gathered by the Researcher.
-   - **Task:** Identifies core business bottlenecks, pain points, and strategic opportunities, explicitly aligning them with the user's `pitch_goal` (e.g., matching a company's recent expansion with your logistics software pitch).
+   - **Task:** Identifies core business bottlenecks, pain points, and strategic opportunities, explicitly aligning them with the user's `pitch_goal` (e.g., matching a company's recent expansion with your SaaS pitch).
 
-3. ** The Direct Response Copywriter:**
-   - **Role:** The creative engine.
-   - **Task:** Takes the Analyst's strategy and drafts a hyper-personalized, psychology-driven cold email. It ensures the tone is B2B professional, avoids spam words, and crafts a compelling hook based on the recent news found in step 1.
+3. ** Cold Outreach Copywriter:**
+   - **Role:** The conversion engine.
+   - **Task:** Takes the Analyst's strategy and drafts a hyper-personalized, psychology-driven cold email. It ensures the tone is B2B professional, avoids spam words, and crafts a compelling hook based on the real, recent news found in step 1.
 
-4. ** The QA / Conversion Reviewer:**
-   - **Role:** The final quality check.
-   - **Task:** Reviews the drafted email against strict cold-outreach constraints (e.g., under 150 words, clear Call-To-Action, no generic fluff). It refines the copy and outputs the final, send-ready lead package.
+## 📸 Visual Showcase
+
+###  The Platform in Action
+![Frontend Request](assets/frontend-request.gif)
+*Initiating a company research and outreach job from the HTMX-powered dashboard.*
+
+###  Under the Hood: CrewAI Agents
+![Terminal Execution](assets/terminal-agents.gif)
+*Real-time terminal output showing the 3-Agent Crew executing internet searches, analyzing data, and drafting copy.*
+
+### Final Output
+<div align="center">
+![Final Outreach Output](assets/lyzrout.jpg)
+*The final generated lead package: Comprehensive company dossier and hyper-personalized cold email ready to send.*
+</div>
+
 
 ## Prerequisites
 
