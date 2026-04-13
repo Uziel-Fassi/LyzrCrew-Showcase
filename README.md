@@ -26,15 +26,15 @@ LyzrCrew is a full-stack SaaS platform that uses AI-driven research to automate 
 
 Unlike standard LLM wrappers, LyzrCrew utilizes a sophisticated multi-agent orchestration framework (CrewAI) where three distinct AI personas work sequentially to generate high-converting outputs:
 
-1. ** Senior Corporate Intelligence Researcher:**
+1. **Senior Corporate Intelligence Researcher:**
    - **Role:** Deep-dives into the target company using real-time search tools (DuckDuckGo and custom scraping). 
    - **Task:** Gathers recent news, financial highlights, product updates, and key personnel data to build a comprehensive company profile.
 
-4. ** B2B Business Analyst:**
+4. **B2B Business Analyst:**
    - **Role:** Processes the raw data gathered by the Researcher.
    - **Task:** Identifies core business bottlenecks, pain points, and strategic opportunities, explicitly aligning them with the user's `pitch_goal` (e.g., matching a company's recent expansion with your SaaS pitch).
 
-5. ** Cold Outreach Copywriter:**
+5. **Cold Outreach Copywriter:**
    - **Role:** The conversion engine.
    - **Task:** Takes the Analyst's strategy and drafts a hyper-personalized, psychology-driven cold email. It ensures the tone is B2B professional, avoids spam words, and crafts a compelling hook based on the real, recent news found in step 1.
 
