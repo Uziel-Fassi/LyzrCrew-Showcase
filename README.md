@@ -26,14 +26,15 @@ LyzrCrew is a full-stack SaaS platform that uses AI-driven research to automate 
 
 Unlike standard LLM wrappers, LyzrCrew utilizes a sophisticated multi-agent orchestration framework (CrewAI) where three distinct AI personas work sequentially to generate high-converting outputs:
 
-1. ** Senior Corporate Intelligence Researcher:** - **Role:** Deep-dives into the target company using real-time search tools (DuckDuckGo and custom scraping). 
+1. ** Senior Corporate Intelligence Researcher:**
+   - **Role:** Deep-dives into the target company using real-time search tools (DuckDuckGo and custom scraping). 
    - **Task:** Gathers recent news, financial highlights, product updates, and key personnel data to build a comprehensive company profile.
 
-2. ** B2B Business Analyst:**
+4. ** B2B Business Analyst:**
    - **Role:** Processes the raw data gathered by the Researcher.
    - **Task:** Identifies core business bottlenecks, pain points, and strategic opportunities, explicitly aligning them with the user's `pitch_goal` (e.g., matching a company's recent expansion with your SaaS pitch).
 
-3. ** Cold Outreach Copywriter:**
+5. ** Cold Outreach Copywriter:**
    - **Role:** The conversion engine.
    - **Task:** Takes the Analyst's strategy and drafts a hyper-personalized, psychology-driven cold email. It ensures the tone is B2B professional, avoids spam words, and crafts a compelling hook based on the real, recent news found in step 1.
 
@@ -68,32 +69,31 @@ Unlike standard LLM wrappers, LyzrCrew utilizes a sophisticated multi-agent orch
 ## Installation
 
 1. **Clone the repository:**
-   \`\`\`bash
+   ```bash
    git clone https://github.com/yourusername/lyzrcrew.git
    cd lyzrcrew
-   \`\`\`
+   ```
 
 2. **Create virtual environment:**
-   \`\`\`bash
+   ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
-   \`\`\`
 
 3. **Install dependencies:**
-   \`\`\`bash
+   ```bash
    pip install -r requirements.txt
-   \`\`\`
+   ```
 
 4. **Configure environment:**
-   \`\`\`bash
+   ```bash
    cp .env.example .env
    # Edit .env with your API keys
-   \`\`\`
+   ```
 
 5. **Run the application:**
-   \`\`\`bash
+   ```bash
    uvicorn api:app --reload
-   \`\`\`
+   ```
 
    Open [http://localhost:8000](http://localhost:8000) in your browser.
 
@@ -107,30 +107,30 @@ Unlike standard LLM wrappers, LyzrCrew utilizes a sophisticated multi-agent orch
 4. Get AI-generated research and personalized cold email
 
 **Example API Usage:**
-\`\`\`python
+```python
 import requests
 
 # Start research job
 response = requests.post("http://localhost:8000/api/htmx/research", 
     data={"company_name": "Tesla", "pitch_goal": "EV charging solutions"})
 print(response.json())
-\`\`\`
+```
 
 ### Bulk Research
 
 Upload a CSV with multiple companies for batch processing:
 
-\`\`\`csv
+```csv
 company_name,pitch_goal
 Tesla,EV infrastructure
 SpaceX,Satellite communications
-\`\`\`
+```
 
 **Bulk API Example:**
-\`\`\`python
+```python
 files = {"file": open("companies.csv", "rb")}
 response = requests.post("http://localhost:8000/api/htmx/bulk-research", files=files)
-\`\`\`
+```
 
 ## Technologies
 
