@@ -2,7 +2,7 @@
 
 **AI-Powered B2B Lead Generation SaaS** — Automate corporate research and outreach with CrewAI agents, delivering personalized cold emails at scale.
 
-LyzrCrew is a full-stack SaaS platform that uses AI-driven research to automate company intelligence, identify sales opportunities, and craft outreach messages. Built with FastAPI, HTMX, and Google’s Gemini AI, it delivers a responsive web experience with real-time progress tracking, credit-based billing, and secure OTP authentication.
+LyzrCrew is a full-stack SaaS platform that uses AI-driven research to automate company intelligence, identify sales opportunities, and craft outreach messages. Built with FastAPI, HTMX, and Google’s Gemini AI, it delivers a responsive web experience with real-time Terminal UI progress tracking, credit-based billing, secure OTP authentication, and precision steering over AI outputs.
 
 ## 📋 Table of Contents
 
@@ -15,12 +15,14 @@ LyzrCrew is a full-stack SaaS platform that uses AI-driven research to automate 
 
 ## Features
 
-- **🤖 AI Agent Crew**: Multi-agent system using CrewAI for comprehensive company research and personalized email generation
-- **📊 Real-Time Tracking**: Live progress updates for bulk research jobs with HTMX-powered dashboards
-- **💳 Credit System**: Stripe-integrated billing with 50 credits per $10 pack
-- **🔐 Secure Auth**: OTP email verification with Resend API integration
-- **📈 Bulk Processing**: Handle multiple companies simultaneously with CSV export capabilities
-- **🎨 Modern UI**: Glassmorphism design with Tailwind CSS and responsive HTMX interactions
+- **🤖 AI Agent Crew**: Multi-agent system using CrewAI for comprehensive company research and personalized email generation.
+- **🎯 Custom Angles**: Precision control over the AI's research focus, allowing you to steer the LLM towards specific departments, technologies, or pain points.
+- **📊 Real-Time Tracking**: Live progress updates via a sleek, Terminal-like UI powered by HTMX.
+- **🛑 Job Control**: Safely abort ongoing AI tasks at any moment to manage your workflow efficiently.
+- **💳 Credit System**: Stripe-integrated billing with 50 credits per $10 pack.
+- **🔐 Secure Auth**: OTP email verification with Resend API integration.
+- **📈 Bulk Processing**: Handle multiple companies simultaneously with CSV export capabilities.
+- **🎨 Premium SaaS UI**: Beautifully crafted, responsive interface featuring functional **Light/Dark modes** and a modern, minimalist design system using Tailwind CSS.
 
 ## 🧠 Autonomous AI Architecture (The 3-Agent Crew)
 
